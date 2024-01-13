@@ -1,0 +1,117 @@
+@import "./../../assets/fonts.css";
+
+$white: #ffffff;
+$gray-50: #f9f9f9;
+$gray-500: #949494;
+$gray-900-black: #1a1a1a;
+$green-500-primary: #36ba5f;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin desktop-h5 {
+    font-family: "MuseoSansCyrl-700", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+@mixin body-medium {
+    font-family: "MuseoSansCyrl-300", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@mixin subtitle-small {
+    font-family: "MuseoSansCyrl-600", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+@mixin btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.article {
+    color: $gray-900-black;
+    width: 100%;
+    max-width: 1280px;
+    padding: 22px 40px 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    // .article__title-wrapper
+
+    &__title-wrapper {
+        display: flex;
+        gap: 12px;
+    }
+
+    // .article__title
+
+    &__title {
+        @include desktop-h5();
+    }
+
+    // .article__text-wrapper
+
+    &__text-wrapper {
+        width: 100%;
+        max-width: 680px;
+    }
+
+    // .article__text
+
+    &__text {
+        @include body-medium();
+    }
+
+    // .article__subtitle
+
+    &__subtitle {
+        @include subtitle-small();
+        margin-top: 40px;
+    }
+
+    // .article__action
+
+    &__action {
+        display: flex;
+        gap: 8px;
+    }
+
+    // .article__icon-btn
+
+    &__icon-btn {
+        @include btn();
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+        background-color: $gray-50;
+    }
+}
+
+.article-btn {
+    @include btn();
+    border-radius: 12px;
+    background-color: $green-500-primary;
+    width: 224px;
+    height: 48px;
+    gap: 8px;
+    color: $white;
+}
