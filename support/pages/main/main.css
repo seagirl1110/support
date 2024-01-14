@@ -14,6 +14,18 @@
   flex-direction: column;
   gap: 80px;
 }
+@media screen and (max-width: 768px) {
+  .support {
+    padding: 30px 20px 60px;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .support {
+    padding: 20px 15px 40px;
+    gap: 40px;
+  }
+}
 
 .banner {
   min-height: 306px;
@@ -29,13 +41,29 @@
   color: #ffffff;
   text-align: center;
 }
+@media screen and (max-width: 450px) {
+  .banner {
+    padding: 30px 20px;
+  }
+}
 .banner__title {
   font-family: "MuseoSansCyrl-700", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 450px) {
+  .banner__title {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner__title {
+    margin-bottom: 25px;
+  }
 }
 .banner__text {
   font-family: "MuseoSansCyrl-300", sans-serif;
@@ -43,12 +71,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  letter-spacing: 0.01em;
   max-width: 535px;
 }
 .banner__action {
   margin-top: 40px;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .banner-btn {
@@ -73,6 +104,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.016em;
   color: #1a1a1a;
   text-align: center;
 }
@@ -87,11 +119,24 @@
   width: 100%;
   max-width: 996px;
   margin: 0 auto;
+  align-items: center;
+}
+@media screen and (max-width: 1075.9px) {
+  .social {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .social {
+    padding: 20px 15px;
+  }
 }
 .social__title-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 2px;
 }
 .social__subtitle {
   font-family: "MuseoSansCyrl-600", sans-serif;
@@ -99,6 +144,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.016em;
 }
 .social__title {
   font-family: "MuseoSansCyrl-600", sans-serif;
@@ -106,10 +152,27 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.016em;
+}
+@media screen and (max-width: 450px) {
+  .social__title {
+    font-size: 30px;
+  }
 }
 .social__action {
   display: flex;
-  gap: 16px;
+  gap: 15px;
+}
+@media screen and (max-width: 1075.9px) {
+  .social__action {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  .social__action {
+    max-width: 330px;
+  }
 }
 .social__btn {
   display: flex;
@@ -135,7 +198,13 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.016em;
   text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .faq__title {
+    font-size: 30px;
+  }
 }
 .faq .swiper {
   max-width: 1200px;
@@ -150,6 +219,7 @@
   height: 44px;
   border-radius: 100%;
   background-color: #ffffff;
+  right: 1px;
 }
 .faq .swiper-button-prev::after,
 .faq .swiper-button-next::after {
@@ -177,6 +247,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.012em;
 }
 .faq-item__text {
   font-family: "MuseoSansCyrl-300", sans-serif;
@@ -184,9 +255,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  letter-spacing: 0.007em;
 }
 .faq-item__img {
+  margin-top: 5px;
   margin-right: -16px;
+  align-self: center;
 }
 
 .info {
@@ -204,7 +278,13 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.016em;
   text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .info__title {
+    font-size: 30px;
+  }
 }
 .info__list {
   list-style-type: none;
@@ -217,15 +297,16 @@
   border-radius: 16px;
   background-color: #ffffff;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-  padding: 20px 16px 24px;
+  padding: 20px 16px 20px 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .info-item__text-wrapper {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  max-width: 430px;
+  max-width: 440px;
 }
 .info-item__title {
   font-family: "MuseoSansCyrl-600", sans-serif;
@@ -233,6 +314,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: -0.012em;
 }
 .info-item__text {
   font-family: "MuseoSansCyrl-300", sans-serif;
@@ -240,7 +322,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  letter-spacing: 0.01em;
   color: #949494;
+}
+.info-item__icon {
+  width: 24px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
