@@ -87,19 +87,22 @@
             <div class="swiper-slide">
               <div class="faq__item faq-item">
                 <div class="faq-item__text-wrapper">
-                  <div class="h6 faq-item__title">Где работает доставка?</div>
+                  <h6 class="faq-item__title">Где работает доставка?</h6>
                   <div class="faq-item__text"></div>
                 </div>
                 <div class="faq-item__img">
-                  <img src="./../../assets/images/svg/faq.svg" alt="Доставка">
+                  <img src="./../../assets/images/svg/faq.svg" alt="Доставка" />
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="faq__item faq-item">
                 <div class="faq-item__text-wrapper">
-                  <div class="h6 faq-item__title">Где работает доставка?</div>
-                  <div class="faq-item__text">Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим</div>
+                  <h6 class="faq-item__title">Где работает доставка?</h6>
+                  <div class="faq-item__text">
+                    Карта лояльности с вашим номером покупателя. Это карта
+                    лояльности с вашим
+                  </div>
                 </div>
                 <div class="faq-item__img"></div>
               </div>
@@ -107,26 +110,83 @@
             <div class="swiper-slide">
               <div class="faq__item faq-item">
                 <div class="faq-item__text-wrapper">
-                  <div class="h6 faq-item__title">Где работает доставка?</div>
-                  <div class="faq-item__text">Карта лояльности с вашим номером </div>
+                  <h6 class="faq-item__title">Где работает доставка?</h6>
+                  <div class="faq-item__text">
+                    Карта лояльности с вашим номером
+                  </div>
                 </div>
                 <div class="faq-item__img">
-                  <img src="./../../assets/images/svg/faq.svg" alt="Доставка">
+                  <img src="./../../assets/images/svg/faq.svg" alt="Доставка" />
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="faq__item faq-item">
                 <div class="faq-item__text-wrapper">
-                  <div class="h6 faq-item__title">В какое время возможен самовывоз В какое время возможен самовывоз?</div>
-                  <div class="faq-item__text">Карта лояльности с вашим </div>
+                  <h6 class="faq-item__title">
+                    В какое время возможен самовывоз В какое время возможен
+                    самовывоз?
+                  </h6>
+                  <div class="faq-item__text">Карта лояльности с вашим</div>
+                </div>
+                <div class="faq-item__img"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="faq__item faq-item">
+                <div class="faq-item__text-wrapper">
+                  <h6 class="faq-item__title">Где работает доставка?</h6>
+                  <div class="faq-item__text"></div>
+                </div>
+                <div class="faq-item__img">
+                  <img src="./../../assets/images/svg/faq.svg" alt="Доставка" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="faq__item faq-item">
+                <div class="faq-item__text-wrapper">
+                  <h6 class="faq-item__title">Где работает доставка?</h6>
+                  <div class="faq-item__text">
+                    Карта лояльности с вашим номером покупателя. Это карта
+                    лояльности с вашим
+                  </div>
+                </div>
+                <div class="faq-item__img"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="faq__item faq-item">
+                <div class="faq-item__text-wrapper">
+                  <h6 class="faq-item__title">Где работает доставка?</h6>
+                  <div class="faq-item__text">
+                    Карта лояльности с вашим номером
+                  </div>
+                </div>
+                <div class="faq-item__img">
+                  <img src="./../../assets/images/svg/faq.svg" alt="Доставка" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="faq__item faq-item">
+                <div class="faq-item__text-wrapper">
+                  <h6 class="faq-item__title">
+                    В какое время возможен самовывоз В какое время возможен
+                    самовывоз?
+                  </h6>
+                  <div class="faq-item__text">Карта лояльности с вашим</div>
                 </div>
                 <div class="faq-item__img"></div>
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev">
+            <img src="./../../assets/images/svg/arrow-left.svg" alt="Влево" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="./../../assets/images/svg/arrow-right.svg" alt="Вправо" />
+          </div>
         </div>
       </section>
       <section class="info">
@@ -177,15 +237,22 @@
         </ul>
       </section>
     </main>
-    <!-- <script src="./script.js"></script> -->
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
       const swiper = new Swiper('.swiper', {
-        // Optional parameters
         loop: true,
-
-        // Navigation arrows
+        spaceBetween: 24,
+        breakpoints: {
+          1600: {
+            slidesPerView: 4,
+          },
+          1279: {
+            slidesPerView: 3,
+          },
+          973: {
+            slidesPerView: 2,
+          },
+        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
