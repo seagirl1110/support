@@ -239,16 +239,17 @@
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
       const swiper = new Swiper('.swiper', {
         loop: true,
+        slidesPerView: 1,
         spaceBetween: 24,
         breakpoints: {
-          1600: {
-            slidesPerView: 4,
+          628: {
+            slidesPerView: 2,
           },
-          1279: {
+          974: {
             slidesPerView: 3,
           },
-          973: {
-            slidesPerView: 2,
+          1280: {
+            slidesPerView: 4,
           },
         },
         navigation: {

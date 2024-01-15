@@ -273,13 +273,7 @@ $gray-900-black: #1a1a1a;
     // .faq .swiper
 
     .swiper {
-        max-width: 1200px;
-    }
-
-    // .faq .swiper-slide
-
-    .swiper-slide {
-        flex-shrink: 1;
+        width: 100%;
     }
 
     // .faq .swiper-button-prev,
@@ -310,7 +304,6 @@ $gray-900-black: #1a1a1a;
     background-color: $white;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 16px;
-    width: 282px;
     height: 162px;
 
     // .faq-item__text-wrapper
